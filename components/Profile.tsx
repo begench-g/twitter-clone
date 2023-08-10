@@ -9,6 +9,7 @@ export const Profile = () => {
   return (
     <div className="h-[69px] flex w-full px-2 items-center ">
       <Avatar imgUrl={"/Avatar/ProfilePicture.png"}/>
+      <div className="hidden md:block">
       <div className="flex justify-between w-full">
         <div className="px-4">
           <div className="font-bold text-sm[16px]">Jerome Bell</div>
@@ -18,6 +19,8 @@ export const Profile = () => {
         <div dangerouslySetInnerHTML={{ __html: svgCode }} />
         </div>
       </div>
+      </div>
+     
     </div>
   );
 };

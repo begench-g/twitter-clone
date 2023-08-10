@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <div className="h-[53px] flex justify-between items-center p-[15px] border-b-[1px] border-gray-200">
+    <div className="h-[53px] w-full flex justify-between items-center p-[15px] border-b-[1px] border-gray-200">
         <div className="text-lg font-bold">
             Home
         </div>

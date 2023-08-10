@@ -2,44 +2,52 @@
 interface sideMenuItems {
     label:string,
     icon:string,
-    url:string
+    url:string,
+    link:string
 }
 
 export const sideMenuItems:sideMenuItems[]= [
     {
       "label": "Home",
       "icon": "home",
-      "url": "/sideMenuIcons/Home/Vector.png"
+      "url": "/sideMenuIcons/Home/Vector.png",
+      "link":'/'
     },
     {
       "label": "Explore",
       "icon": "search",
-      "url": "/sideMenuIcons/Explore/Vector.png"
+      "url": "/sideMenuIcons/Explore/Vector.png",
+      "link":'/explore'
     },
     {
       "label": "Notifications",
       "icon": "bell",
-      "url": "/sideMenuIcons/Notifications/Vector.png"
+      "url": "/sideMenuIcons/Notifications/Vector.png",
+      "link":'/notifications'
     },
     {
       "label": "Messages",
       "icon": "envelope",
-      "url": "/sideMenuIcons/Messages/Vector.png"
+      "url": "/sideMenuIcons/Messages/Vector.png",
+      "link":'/messages'
     },
     {
         "label": "Bookmarks",
         "icon": "bookmarks",
-        "url": "/sideMenuIcons/Bookmarks/Vector.png"
+        "url": "/sideMenuIcons/Bookmarks/Vector.png",
+        "link":'/bookmarks'
       },
     {
       "label": "Profile",
-      "icon": "use2r",
-      "url": "/sideMenuIcons/Profile/Vector.png"
+      "icon": "user",
+      "url": "/sideMenuIcons/Profile/Vector.png",
+      "link":'/profile'
     },
     {
         "label": "More",
         "icon":'more',
-        "url":"/sideMenuIcons/More/Vector.png"
+        "url":"/sideMenuIcons/More/Vector.png",
+        "link":'/'
     }
   ]
 
@@ -112,5 +120,42 @@ export const actions=[
   </svg>`,
     action:'share',
     count:61
+  },
+]
+
+export const follow = [
+  {
+    imageUrl:'/Follow/follow1.png',
+    name:'Bessie Cooper',
+    username:' @alessandrovi'
+  },
+  {
+    imageUrl:'/Follow/follow2.png',
+    name:'Jenny Wilson',
+    username:'@gabrielcantarin'
+  },
+]
+
+export const news = [
+  {
+    title:'COVID19',
+    date:'Last night',
+    content:'England’s Chief Medical Officer says the UK is at the most dangerous time of the pandemic',
+    tagName:'# covid19',
+    imageUrl:'/News/news1.png'
+  },
+  {
+    title:'US news',
+    date:'4h ago',
+    content:'Parler may go offline following suspensions by Amazon, Apple and Google',
+    tagName:'trump',
+    imageUrl:'/News/news3.png'
+  },
+  {
+    title:'India',
+    date:'1h ago',
+    content:'India vs Australia: India hold on to earn a draw on Day 5 in Sydney Test',
+    tagName:'#sport',
+    imageUrl:'/News/news2.png'
   },
 ]

@@ -2,10 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { icons } from "@/constants";
 import { ButtonTweet } from "./ButtonTweet";
+import WysiWigEditor from "./Editor";
+import BasicModal from "./Modal";
 
 export const Post = () => {
   return (
-    <div className="px-4 flex py-3 border-b border-stone-200 h-24">
+    <div className="px-4 flex py-3 border-b border-stone-200 "> 
+    {/* h24 */}
       <div>
         <div className="rounded-full overflow-hidden">
           <Image
@@ -18,15 +21,16 @@ export const Post = () => {
       </div>
 
       <div className="px-3 flex flex-1 flex-col justify-between">
-        <div className=" text-xl font-medium text-slate-500">
-          What’s happening?
-        </div>
+      
+          <BasicModal/>
+        
+
 
         <div className="flex flex-1 h-6 justify-between items-center">
           <div>
             <div className="flex gap-1">
               {icons.map((icon) => (
-                <div dangerouslySetInnerHTML={{ __html: icon.svgCode }} />
+                <div key={icon.icon} dangerouslySetInnerHTML={{ __html: icon.svgCode }} />
               ))}
             </div>
           </div>

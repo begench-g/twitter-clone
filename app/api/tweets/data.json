@@ -1,0 +1,20 @@
+[
+    {
+        "name":"Devon Lane",
+        "username":"@johndue",
+        "date":"23s",
+        "imageUrl":"/Tweets/tweetImage1.png",
+        "title":"Tom is in a big hurry.",
+        "avatar":"/Tweets/profile2.png",
+        "id":"1"
+    },
+    {
+        "name":"Darlene Robertson",
+        "username":"@johndue",
+        "date":"23s",
+        "imageUrl":"/Tweets/tweet2.png",
+        "title":"Tom is in a big hurry.",
+        "avatar":"/Tweets/profile3.png",
+        "id":"2"
+    }
+]

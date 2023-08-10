@@ -4,7 +4,7 @@ import { Actions } from "./Actions";
 import { Avatar } from "./Avatar";
 import { tweetProps } from "@/types";
 
-export const Tweet = ({avatar,name,username,date,title,imageUrl}:tweetProps) => {
+export const Tweet = ({avatar,name,username,date,title,imageUrl,id,key}:tweetProps) => {
   return (
     <div className="flex px-4 py-3 border-b border-slate-200">
       <div>
@@ -18,15 +18,14 @@ export const Tweet = ({avatar,name,username,date,title,imageUrl}:tweetProps) => 
             <div className="text-sm font-medium text-slate-400">{date}</div>
           </div>
           <div className="text-sm font-medium">{title}</div>
-          <div className="flex max-h-[280px] py-3 overflow-hidden">
-
+          <div className="py-3 overflow-hidden">
             <Image
               src={imageUrl}
               width={0}
               height={0}
               sizes="100vw"
               alt=""
-              style={{ width: "100%", height: "auto",borderRadius:"16px" }} // optional
+              style={{ width: "auto",minWidth:"300px", height: "auto",borderRadius:"16px" }} // optional
             />
           </div>
           <Actions/>
