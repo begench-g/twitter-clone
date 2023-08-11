@@ -1,0 +1,13 @@
+{
+    "Index": {
+      "title": "Hello world!"
+    },
+    "Menu":{
+      "Home":"Home",
+      "Explore":"Explore",
+      "Notifications":"Notifications",
+      "Messages":"Messages",
+      "Bookmarks":"Bookmarks",
+      "Profile":"Profile"
+    }
+  }

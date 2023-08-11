@@ -1,0 +1,14 @@
+{
+    "Index": {
+      "title": "Salam dunya!"
+    },
+    "Menu":{
+      "Home":"Esasy Sahypa",
+      "Explore":"Gozleg",
+      "Notifications":"Habarnamalar",
+      "Messages":"Habarlar",
+      "Bookmarks":"Bellikler",
+      "Profile":"Profil",
+      "More":"Dowamy"
+    }
+  }

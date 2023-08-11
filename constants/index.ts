@@ -1,11 +1,10 @@
-
+import {useTranslations} from 'next-intl';
 interface sideMenuItems {
     label:string,
     icon:string,
     url:string,
     link:string
 }
-
 export const sideMenuItems:sideMenuItems[]= [
     {
       "label": "Home",
