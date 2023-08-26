@@ -1,4 +1,4 @@
-import { Link } from 'next-intl'
+import  Link  from 'next-intl/link'
 import React from 'react'
 
 export const Header = () => {

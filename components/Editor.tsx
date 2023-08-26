@@ -1,20 +1,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { FaSearch } from "react-icons/fa";
-import { DefaultDraftBlockRenderMap, DefaultDraftInlineStyle } from 'draft-js';
-import {
-  Editor,
-  EditorState,
-  ContentState,
-  convertToRaw,
-  convertFromRaw,
-} from "draft-js";
+import { EditorState, convertToRaw, convertFromRaw } from "draft-js";
 import { Editor as DraftEditor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 
-const Icon = () =>{
-  return  <Image src="/next.svg" alt='' width={10} height={10}/>
-}
+const Icon = () => {
+  return <Image src="/next.svg" alt="" width={10} height={10} />;
+};
 
 const WysiWigEditor: React.FC = () => {
   const [editorState, setEditorState] = useState(
@@ -38,7 +30,7 @@ const WysiWigEditor: React.FC = () => {
     const contentState = convertFromRaw(contentRaw);
     setEditorState(EditorState.createWithContent(contentState));
   };
- 
+
   return (
     <div>
       <DraftEditor
@@ -48,8 +40,7 @@ const WysiWigEditor: React.FC = () => {
         toolbar={{
           link: {
             options: ["link"],
-            link:{icon:<Icon/>}
-    
+            link: { icon: <Icon /> },
           },
           textAlign: {
             inDropdown: true,

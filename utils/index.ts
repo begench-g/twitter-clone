@@ -1,5 +1,6 @@
-import axios from "axios"
-import { error } from "console"
+
+import axios, {  AxiosError } from "axios"
+
 
 export const getTweets = async () => {
     try{
@@ -25,3 +26,24 @@ export const postTweets = async ({image,title}:{image:string,title:string}) =>{
           }).then(()=>console.log('ishledi'))
     
 }
+
+export const loginPost = async ({username,password}:{username:string,password:string}) => {
+    try {
+      return  axios.post('http://localhost:5000/api/login',{
+      username,
+      password
+    },)
+    }catch(error:any){
+        return error.response.data
+    }
+  }
+
+  export const refreshTokenPost = async ({user}:any)=>{
+    try {
+        const res = await axios.post("http://localhost:5000/api/refresh", { token: user.refreshToken });
+        return res.data;
+      } catch (err) {
+        const error = err as AxiosError
+        console.log(error.response?.data);
+      }
+  }

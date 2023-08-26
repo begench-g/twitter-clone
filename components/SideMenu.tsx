@@ -2,12 +2,9 @@ import React from "react";
 import { MenuItem } from "./MenuItem";
 import { ButtonTweet } from "./ButtonTweet";
 import { Profile } from "./Profile";
-import { sideMenuItems } from "@/constants";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import Button from "@mui/material/Button";
-import { Popover } from "@mui/material";
-import Typography from "@mui/material";
+
 
 export const SideMenu = () => {
   const t = useTranslations("Menu");

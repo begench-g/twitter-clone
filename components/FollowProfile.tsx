@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { collectAppConfig } from "next/dist/build/utils";
 import { FollowProps } from "@/types";
 
 export const FollowProfile = ({imageUrl,name,username}:FollowProps) => {

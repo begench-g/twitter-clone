@@ -20,6 +20,7 @@ export async function POST(request:any){
     }
     console.log("Buda ishledi")
     tweets.push(newTweet);
+    
     console.log(tweets)
     return NextResponse.json(tweets)
 }
